@@ -7,7 +7,9 @@ import "dotenv/config";
 const __filename = url.fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const ai = new GoogleGenAI({});
+const GEMINI_API = process.env.GEMINI_API_KEY;
+
+const ai = new GoogleGenAI({ apiKey: GEMINI_API });
 const contextoPath = path.join(__dirname, "..", "contexto.txt");
 const contexto = fs.readFileSync(contextoPath, "utf-8");
 /**

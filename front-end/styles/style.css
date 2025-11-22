@@ -1,0 +1,84 @@
+/* ===== Estilos globais ===== */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 20px;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/* Container principal do chatbot */
+.container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Título do chatbot */
+h1 {
+  text-align: center;
+  color: black;
+}
+
+/* Campo de texto para pergunta */
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+/* Botão de enviar pergunta */
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background-color: #777777;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Efeito ao passar o mouse no botão */
+button:hover {
+  background-color: #424242;
+}
+
+/* Área onde a resposta da IA será exibida */
+#resposta {
+  background-color: #777777;
+  max-height: 500px;
+  overflow-y: auto;
+  padding: 12px;
+  margin-top: 20px;
+  border-radius: 8px;
+  white-space: pre-line; /* Mantém quebras de linha do texto */
+  min-height: 40px; /* Altura mínima para evitar "pulos" na tela */
+}
+
+.msg {
+  background-color: #dadada;
+  color: black;
+  padding: 10px;
+  margin: 1px 0;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+}
+
+.msg.user {
+  text-align: right;
+}
+
+.msg.ia {
+  text-align: left;
+}
